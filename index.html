@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Resizer & Compressor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-content">
+      <div class="navbar-brand">Image Resizer & Converter</div>
+      <ul class="navbar-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#resize">Resize</a></li>
+        <li><a href="#convert">Convert</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="converter" id="resize">
+    <h1>📷 Image Resizer & Compressor</h1>
+    <input type="file" id="upload" accept="image/*">
+    <div class="controls">
+      <label>Width (px): <input type="number" id="width"></label>
+      <label>Height (px): <input type="number" id="height"></label>
+      <label>Quality: <input type="range" id="quality" min="0" max="1" step="0.1" value="0.8"></label>
+    </div>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <button id="download">Download</button>
+  </div>
+
+
+  <div class="converter" id="convert">
+    <h2>Convert Images & Documents</h2>
+    <input type="file" id="convertInput" accept="image/*,.pdf,.docx" multiple>
+    <select id="convertType">
+      <option value="img2pdf">Images to PDF</option>
+      <option value="img2docx">Images to DOCX</option>
+      <option value="pdf2img">PDF to Images</option>
+      <option value="docx2img">DOCX to Images</option>
+    </select>
+    <button id="convertBtn" >Convert</button>
+    <div id="convertResult"></div>
+    <div class="note">
+      <strong>Note:</strong> Only PNG and JPEG images are supported for DOCX conversion.<br>
+      Make sure to select the correct conversion type.
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      &copy; 2025 Image Resizer & Converter. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Required libraries for conversion features -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.7.0/docx.umd.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.7.0/mammoth.browser.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

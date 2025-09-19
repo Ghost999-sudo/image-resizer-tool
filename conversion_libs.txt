@@ -1,0 +1,19 @@
+// jsPDF library for PDF generation
+// https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js
+
+// docx library for DOCX generation
+// https://cdnjs.cloudflare.com/ajax/libs/docx/7.7.0/docx.umd.js
+
+// PDF.js for PDF parsing
+// https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js
+
+// mammoth.js for DOCX parsing
+// https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.7.0/mammoth.browser.min.js
+
+// Add these script tags to your index.html before script.js:
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/docx/7.7.0/docx.umd.js"></script>
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+// <script src="https://cdnjs.cloudflare.com/ajax/libs/mammoth/1.7.0/mammoth.browser.min.js"></script>
+
+// This file is a helper to remind you to add the required libraries for conversion features.
